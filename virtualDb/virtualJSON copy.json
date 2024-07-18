@@ -1,0 +1,1773 @@
+{
+    "tecnology": [
+        {
+            "react": {
+                "basic": [
+                    {
+                        "ask": "¿Qué es React?",
+                        "options": [
+                            "Una librería de JavaScript",
+                            "Un framework de JavaScript",
+                            "Un lenguaje de programación"
+                        ],
+                        "answer": "Una librería de JavaScript",
+                        "images": "https://example.com/react-logo.png",
+                        "information": "React es una librería de JavaScript para construir interfaces de usuario."
+                    },
+                    {
+                        "ask": "¿Qué es JSX?",
+                        "options": [
+                            "Una extensión de JavaScript",
+                            "Un lenguaje de marcado",
+                            "Un archivo de estilo"
+                        ],
+                        "answer": "Una extensión de JavaScript",
+                        "images": "https://example.com/jsx-logo.png",
+                        "information": "JSX es una extensión de JavaScript que permite escribir HTML dentro de JavaScript."
+                    },
+                    {
+                        "ask": "¿Cómo se crea un componente funcional en React?",
+                        "options": [
+                            "function MyComponent() {}",
+                            "class MyComponent extends React.Component {}",
+                            "const MyComponent = () => {}"
+                        ],
+                        "answer": "const MyComponent = () => {}",
+                        "images": "https://example.com/functional-component.png",
+                        "information": "Un componente funcional se crea usando una función que retorna JSX."
+                    },
+                    {
+                        "ask": "¿Qué hook se utiliza para manejar el estado en componentes funcionales?",
+                        "options": [
+                            "useState",
+                            "useEffect",
+                            "useRef"
+                        ],
+                        "answer": "useState",
+                        "images": "https://example.com/useState.png",
+                        "information": "useState es un hook que permite manejar el estado en componentes funcionales."
+                    },
+                    {
+                        "ask": "¿Cómo se pasa información de un componente padre a un componente hijo?",
+                        "options": [
+                            "Usando props",
+                            "Usando state",
+                            "Usando context"
+                        ],
+                        "answer": "Usando props",
+                        "images": "https://example.com/props.png",
+                        "information": "Props son un mecanismo para pasar datos de un componente padre a un componente hijo."
+                    },
+                    {
+                        "ask": "¿Qué hook se utiliza para efectos secundarios en componentes funcionales?",
+                        "options": [
+                            "useEffect",
+                            "useState",
+                            "useMemo"
+                        ],
+                        "answer": "useEffect",
+                        "images": "https://example.com/useEffect.png",
+                        "information": "useEffect es un hook que se usa para manejar efectos secundarios como llamadas a APIs."
+                    },
+                    {
+                        "ask": "¿Cómo se establece un valor inicial para useState?",
+                        "options": [
+                            "useState()",
+                            "useState(null)",
+                            "useState(initialValue)"
+                        ],
+                        "answer": "useState(initialValue)",
+                        "images": "https://example.com/useState-initial.png",
+                        "information": "useState acepta un valor inicial que se usará como estado inicial del componente."
+                    },
+                    {
+                        "ask": "¿Qué método del ciclo de vida se sustituye con useEffect?",
+                        "options": [
+                            "componentDidMount",
+                            "componentDidUpdate",
+                            "componentWillUnmount",
+                            "Todas las anteriores"
+                        ],
+                        "answer": "Todas las anteriores",
+                        "images": "https://example.com/lifecycle.png",
+                        "information": "useEffect puede sustituir múltiples métodos del ciclo de vida de los componentes de clase."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar un formulario en React?",
+                        "options": [
+                            "Con eventos onChange y onSubmit",
+                            "Con props",
+                            "Con useState"
+                        ],
+                        "answer": "Con eventos onChange y onSubmit",
+                        "images": "https://example.com/form-handling.png",
+                        "information": "Para manejar formularios se usan los eventos onChange para actualizar el estado y onSubmit para manejar el envío."
+                    },
+                    {
+                        "ask": "¿Qué herramienta se usa comúnmente para manejar rutas en una aplicación React?",
+                        "options": [
+                            "React Router",
+                            "Redux",
+                            "Axios"
+                        ],
+                        "answer": "React Router",
+                        "images": "https://example.com/react-router.png",
+                        "information": "React Router se utiliza para manejar la navegación y las rutas en aplicaciones React."
+                    },
+                    {
+                        "ask": "¿Cómo se renderiza un componente en el DOM?",
+                        "options": [
+                            "ReactDOM.render()",
+                            "React.render()",
+                            "Component.render()"
+                        ],
+                        "answer": "ReactDOM.render()",
+                        "images": "https://example.com/reactdom-render.png",
+                        "information": "ReactDOM.render() se usa para renderizar un componente React en el DOM."
+                    },
+                    {
+                        "ask": "¿Qué es un componente en React?",
+                        "options": [
+                            "Una parte reutilizable de la interfaz de usuario",
+                            "Una función para calcular valores",
+                            "Un archivo de configuración"
+                        ],
+                        "answer": "Una parte reutilizable de la interfaz de usuario",
+                        "images": "https://example.com/component.png",
+                        "information": "Un componente en React es una parte reutilizable de la interfaz de usuario que puede contener lógica y presentación."
+                    },
+                    {
+                        "ask": "¿Cuál es la forma correcta de definir un componente de clase en React?",
+                        "options": [
+                            "class MyComponent extends React.Component {}",
+                            "function MyComponent() {}",
+                            "const MyComponent = () => {}"
+                        ],
+                        "answer": "class MyComponent extends React.Component {}",
+                        "images": "https://example.com/class-component.png",
+                        "information": "Un componente de clase en React se define extendiendo la clase React.Component."
+                    },
+                    {
+                        "ask": "¿Qué significa 'props' en React?",
+                        "options": [
+                            "Propiedades que se pasan de un componente padre a un componente hijo",
+                            "Métodos internos de los componentes",
+                            "Valores constantes"
+                        ],
+                        "answer": "Propiedades que se pasan de un componente padre a un componente hijo",
+                        "images": "https://example.com/props-basic.png",
+                        "information": "'Props' en React son propiedades que se pasan de un componente padre a un componente hijo para que este último pueda renderizar y funcionar correctamente."
+                    },
+                    {
+                        "ask": "¿Qué es el Virtual DOM en React?",
+                        "options": [
+                            "Una representación virtual de la estructura de un DOM real",
+                            "Un método de enrutamiento",
+                            "Un modelo de datos"
+                        ],
+                        "answer": "Una representación virtual de la estructura de un DOM real",
+                        "images": "https://example.com/virtual-dom.png",
+                        "information": "El Virtual DOM en React es una representación virtual de la estructura de un DOM real, utilizado para optimizar y actualizar eficientemente los cambios en la interfaz de usuario."
+                    },
+                    {
+                        "ask": "¿Qué es JSX en React?",
+                        "options": [
+                            "Una extensión de JavaScript que permite escribir HTML dentro de JavaScript",
+                            "Un lenguaje de marcado independiente",
+                            "Un preprocesador para CSS"
+                        ],
+                        "answer": "Una extensión de JavaScript que permite escribir HTML dentro de JavaScript",
+                        "images": "https://example.com/jsx-basic.png",
+                        "information": "JSX en React es una extensión de JavaScript que permite escribir HTML dentro de JavaScript, facilitando la creación de interfaces de usuario de manera declarativa."
+                    },
+                    {
+                        "ask": "¿Qué hook se utiliza para manejar el ciclo de vida en componentes funcionales?",
+                        "options": [
+                            "useEffect",
+                            "useState",
+                            "useRef"
+                        ],
+                        "answer": "useEffect",
+                        "images": "https://example.com/useEffect-basic.png",
+                        "information": "useEffect es un hook que se utiliza en componentes funcionales de React para manejar efectos secundarios y ciclo de vida, como montaje, actualización y desmontaje del componente."
+                    },
+                    {
+                        "ask": "¿Qué función cumple el método render() en un componente de clase en React?",
+                        "options": [
+                            "Devuelve el JSX que representa la interfaz de usuario del componente",
+                            "Inicializa el estado del componente",
+                            "Define métodos de ciclo de vida"
+                        ],
+                        "answer": "Devuelve el JSX que representa la interfaz de usuario del componente",
+                        "images": "https://example.com/render-basic.png",
+                        "information": "El método render() en un componente de clase en React devuelve el JSX que representa la interfaz de usuario del componente, determinando cómo se verá en la pantalla."
+                    },
+                    {
+                        "ask": "¿Cómo se define el estado en un componente de clase en React?",
+                        "options": [
+                            "this.state = { }",
+                            "useState()",
+                            "const [state, setState] = useState()"
+                        ],
+                        "answer": "this.state = { }",
+                        "images": "https://example.com/state-basic.png",
+                        "information": "El estado en un componente de clase en React se define usando this.state = { } dentro del constructor del componente."
+                    },
+                    {
+                        "ask": "¿Qué es el propósito de la función setState() en React?",
+                        "options": [
+                            "Actualizar el estado del componente y re-renderizarlo",
+                            "Definir props adicionales",
+                            "Eliminar el estado del componente"
+                        ],
+                        "answer": "Actualizar el estado del componente y re-renderizarlo",
+                        "images": "https://example.com/setState-basic.png",
+                        "information": "La función setState() en React se utiliza para actualizar el estado del componente y re-renderizarlo para reflejar los cambios en la interfaz de usuario."
+                    },
+                    {
+                        "ask": "¿Qué es un evento en React?",
+                        "options": [
+                            "Acciones que ocurren cuando interactúas con elementos de la interfaz de usuario",
+                            "Propiedades de los componentes",
+                            "Clases que definen métodos"
+                        ],
+                        "answer": "Acciones que ocurren cuando interactúas con elementos de la interfaz de usuario",
+                        "images": "https://example.com/event-basic.png",
+                        "information": "Un evento en React son acciones que ocurren cuando interactúas con elementos de la interfaz de usuario, como clics, cambios de estado, o envíos de formularios."
+                    },
+                    {
+                        "ask": "¿Qué propiedad se usa para aplicar estilos en línea a un componente?",
+                        "options": [
+                            "style",
+                            "className",
+                            "id"
+                        ],
+                        "answer": "style",
+                        "images": "https://example.com/style-prop.png",
+                        "information": "La propiedad style se usa para aplicar estilos en línea a un componente React."
+                    },
+                    {
+                        "ask": "¿Cómo se puede agregar una clase CSS a un componente?",
+                        "options": [
+                            "className",
+                            "class",
+                            "id"
+                        ],
+                        "answer": "className",
+                        "images": "https://example.com/classname.png",
+                        "information": "La propiedad className se usa para agregar una clase CSS a un componente React."
+                    },
+                    {
+                        "ask": "¿Qué método se usa para crear un nuevo proyecto React?",
+                        "options": [
+                            "create-react-app",
+                            "npm init react-app",
+                            "react-create-app"
+                        ],
+                        "answer": "create-react-app",
+                        "images": "https://example.com/create-react-app.png",
+                        "information": "create-react-app es una herramienta oficial para crear nuevos proyectos React."
+                    },
+                    {
+                        "ask": "¿Qué es un 'fragment' en React?",
+                        "options": [
+                            "Un contenedor sin un elemento extra en el DOM",
+                            "Una función",
+                            "Un hook"
+                        ],
+                        "answer": "Un contenedor sin un elemento extra en el DOM",
+                        "images": "https://example.com/fragment.png",
+                        "information": "Un fragment permite agrupar múltiples elementos sin agregar un nodo extra en el DOM."
+                    },
+                    {
+                        "ask": "¿Cómo se puede acceder a un elemento del DOM directamente en React?",
+                        "options": [
+                            "Usando useRef",
+                            "Usando useState",
+                            "Usando useEffect"
+                        ],
+                        "answer": "Usando useRef",
+                        "images": "https://example.com/useRef.png",
+                        "information": "useRef se usa para acceder directamente a un elemento del DOM en un componente funcional."
+                    },
+                    {
+                        "ask": "¿Qué es un 'estado' en React?",
+                        "options": [
+                            "Un objeto que determina cómo se renderiza un componente",
+                            "Una función",
+                            "Un método del ciclo de vida"
+                        ],
+                        "answer": "Un objeto que determina cómo se renderiza un componente",
+                        "images": "https://example.com/state.png",
+                        "information": "El estado es un objeto que contiene datos que determinan cómo se renderiza un componente."
+                    },
+                    {
+                        "ask": "¿Cómo se puede actualizar el estado de un componente?",
+                        "options": [
+                            "Usando setState en componentes de clase o useState en componentes funcionales",
+                            "Usando render()",
+                            "Usando getState()"
+                        ],
+                        "answer": "Usando setState en componentes de clase o useState en componentes funcionales",
+                        "images": "https://example.com/setState.png",
+                        "information": "El estado se actualiza usando setState en componentes de clase o useState en componentes funcionales."
+                    },
+                    {
+                        "ask": "¿Qué es un 'prop' en React?",
+                        "options": [
+                            "Datos que se pasan de un componente padre a un componente hijo",
+                            "Un método del ciclo de vida",
+                            "Un hook"
+                        ],
+                        "answer": "Datos que se pasan de un componente padre a un componente hijo",
+                        "images": "https://example.com/props.png",
+                        "information": "Props son datos que se pasan de un componente padre a un componente hijo."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar un evento en React?",
+                        "options": [
+                            "Usando onClick, onChange, etc.",
+                            "Usando addEventListener",
+                            "Usando attachEvent"
+                        ],
+                        "answer": "Usando onClick, onChange, etc.",
+                        "images": "https://example.com/event-handling.png",
+                        "information": "Los eventos en React se manejan usando propiedades como onClick, onChange, etc."
+                    },
+                    {
+                        "ask": "¿Qué es un patrón de diseño en programación?",
+                        "options": [
+                            "Una solución general y reutilizable a un problema común en el diseño de software",
+                            "Un método específico para estilizar componentes en React",
+                            "Una técnica para mejorar el rendimiento de la aplicación"
+                        ],
+                        "answer": "Una solución general y reutilizable a un problema común en el diseño de software",
+                        "images": "https://example.com/design-patterns-basic.png",
+                        "information": "Un patrón de diseño en programación es una solución general y reutilizable a un problema común en el diseño de software, que ayuda a estructurar y organizar el código de manera eficiente."
+                    },
+                    {
+                        "ask": "¿Cuál es la ventaja de usar patrones de diseño en React?",
+                        "options": [
+                            "Mejoran la estructura y mantenibilidad del código",
+                            "Aumentan el tamaño de los componentes",
+                            "Reducen la velocidad de renderizado"
+                        ],
+                        "answer": "Mejoran la estructura y mantenibilidad del código",
+                        "images": "https://example.com/design-patterns-advantage-basic.png",
+                        "information": "Usar patrones de diseño en React mejora la estructura y mantenibilidad del código, facilitando la comprensión y colaboración entre desarrolladores y reduciendo la duplicación de código."
+                    },
+                    {
+                        "ask": "¿Qué patrón de diseño se usa comúnmente para manejar la comunicación entre componentes en React?",
+                        "options": [
+                            "Patrón Observer",
+                            "Patrón Singleton",
+                            "Patrón Factory"
+                        ],
+                        "answer": "Patrón Observer",
+                        "images": "https://example.com/observer-pattern-basic.png",
+                        "information": "El patrón Observer se usa comúnmente en React para manejar la comunicación entre componentes, permitiendo que varios componentes escuchen y respondan a cambios en otros componentes de manera eficiente."
+                    },
+                    {
+                        "ask": "¿Cuál es el objetivo principal del patrón de diseño MVC (Modelo-Vista-Controlador) en aplicaciones React?",
+                        "options": [
+                            "Separar la lógica de negocio, presentación y control en capas distintas",
+                            "Optimizar el rendimiento de los componentes",
+                            "Agregar estilos de forma eficiente"
+                        ],
+                        "answer": "Separar la lógica de negocio, presentación y control en capas distintas",
+                        "images": "https://example.com/mvc-pattern-basic.png",
+                        "information": "El patrón MVC en React tiene como objetivo separar la lógica de negocio (Modelo), presentación (Vista) y control (Controlador) en capas distintas, facilitando el desarrollo y mantenimiento de aplicaciones escalables."
+                    },
+                    {
+                        "ask": "¿Qué patrón de diseño se utiliza para encapsular lógica de estado compleja y hacerla accesible a varios componentes?",
+                        "options": [
+                            "Patrón State Management",
+                            "Patrón Decorator",
+                            "Patrón Prototype"
+                        ],
+                        "answer": "Patrón State Management",
+                        "images": "https://example.com/state-management-pattern-basic.png",
+                        "information": "El patrón de diseño State Management se utiliza para encapsular lógica de estado compleja y hacerla accesible a varios componentes en React, mejorando la escalabilidad y mantenibilidad de la aplicación."
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": "¿Qué es un estado derivado (derived state)?",
+                        "options": [
+                            "Estado calculado a partir de props o state",
+                            "Estado inicial",
+                            "Estado final"
+                        ],
+                        "answer": "Estado calculado a partir de props o state",
+                        "images": "https://example.com/derived-state.png",
+                        "information": "Un estado derivado es un estado que se calcula a partir de props u otros estados."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para manejar referencias a elementos del DOM?",
+                        "options": [
+                            "useRef",
+                            "useState",
+                            "useEffect"
+                        ],
+                        "answer": "useRef",
+                        "images": "https://example.com/useRef.png",
+                        "information": "useRef se usa para crear referencias mutables a elementos del DOM."
+                    },
+                    {
+                        "ask": "¿Qué es un memoized component?",
+                        "options": [
+                            "Un componente optimizado con React.memo",
+                            "Un componente funcional",
+                            "Un componente de clase"
+                        ],
+                        "answer": "Un componente optimizado con React.memo",
+                        "images": "https://example.com/react-memo.png",
+                        "information": "React.memo es una función de orden superior que optimiza componentes funcionales."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para memoizar valores computados?",
+                        "options": [
+                            "useMemo",
+                            "useState",
+                            "useEffect"
+                        ],
+                        "answer": "useMemo",
+                        "images": "https://example.com/useMemo.png",
+                        "information": "useMemo se utiliza para memoizar valores que se calculan para evitar cálculos innecesarios."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para memoizar funciones?",
+                        "options": [
+                            "useCallback",
+                            "useEffect",
+                            "useState"
+                        ],
+                        "answer": "useCallback",
+                        "images": "https://example.com/useCallback.png",
+                        "information": "useCallback se usa para memoizar funciones y evitar su recreación en cada renderizado."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar el estado global en una aplicación React?",
+                        "options": [
+                            "Usando Context API",
+                            "Usando useState",
+                            "Usando useEffect"
+                        ],
+                        "answer": "Usando Context API",
+                        "images": "https://example.com/context-api.png",
+                        "information": "Context API permite manejar el estado global y compartir datos a lo largo de la aplicación."
+                    },
+                    {
+                        "ask": "¿Qué es un HOC (Higher-Order Component)?",
+                        "options": [
+                            "Una función que toma un componente y retorna un nuevo componente",
+                            "Un hook",
+                            "Un componente de clase"
+                        ],
+                        "answer": "Una función que toma un componente y retorna un nuevo componente",
+                        "images": "https://example.com/hoc.png",
+                        "information": "Un HOC es una función que toma un componente y retorna un nuevo componente con funcionalidades adicionales."
+                    },
+                    {
+                        "ask": "¿Qué es una render prop?",
+                        "options": [
+                            "Una técnica para compartir código entre componentes usando una prop que es una función",
+                            "Un método de render",
+                            "Una propiedad del estado"
+                        ],
+                        "answer": "Una técnica para compartir código entre componentes usando una prop que es una función",
+                        "images": "https://example.com/render-prop.png",
+                        "information": "Una render prop es una técnica para compartir código entre componentes usando una prop que es una función."
+                    },
+                    {
+                        "ask": "¿Cómo se puede optimizar la renderización de listas en React?",
+                        "options": [
+                            "Usando keys únicas y estables",
+                            "Usando useEffect",
+                            "Usando useMemo"
+                        ],
+                        "answer": "Usando keys únicas y estables",
+                        "images": "https://example.com/list-keys.png",
+                        "information": "Para optimizar la renderización de listas, es importante usar keys únicas y estables para cada elemento."
+                    },
+                    {
+                        "ask": "¿Qué es el contexto (context) en React?",
+                        "options": [
+                            "Un método para compartir datos a través de la aplicación sin pasar props manualmente",
+                            "Un hook",
+                            "Un ciclo de vida"
+                        ],
+                        "answer": "Un método para compartir datos a través de la aplicación sin pasar props manualmente",
+                        "images": "https://example.com/react-context.png",
+                        "information": "El contexto en React permite compartir datos a través de la aplicación sin necesidad de pasar props manualmente."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para manejar referencias en componentes funcionales?",
+                        "options": [
+                            "useRef",
+                            "useState",
+                            "useEffect"
+                        ],
+                        "answer": "useRef",
+                        "images": "https://example.com/useRef.png",
+                        "information": "useRef se usa para crear referencias que persisten a lo largo del ciclo de vida del componente."
+                    },
+                    {
+                        "ask": "¿Cómo se pueden pasar múltiples valores de estado en un solo useState?",
+                        "options": [
+                            "Usando un objeto",
+                            "Usando un array",
+                            "Usando múltiples useState"
+                        ],
+                        "answer": "Usando un objeto",
+                        "images": "https://example.com/useState-object.png",
+                        "information": "Se pueden pasar múltiples valores de estado en un solo useState usando un objeto."
+                    },
+                    {
+                        "ask": "¿Qué es el 'lifting state up' en React?",
+                        "options": [
+                            "Mover el estado a un componente ancestro",
+                            "Actualizar el estado",
+                            "Eliminar el estado"
+                        ],
+                        "answer": "Mover el estado a un componente ancestro",
+                        "images": "https://example.com/lifting-state-up.png",
+                        "information": "Lifting state up es una técnica para mover el estado a un componente ancestro común para compartir datos entre componentes hijos."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para ejecutar lógica después de renderizar un componente?",
+                        "options": [
+                            "useEffect",
+                            "useState",
+                            "useRef"
+                        ],
+                        "answer": "useEffect",
+                        "images": "https://example.com/useEffect.png",
+                        "information": "useEffect se usa para ejecutar lógica después de renderizar un componente, como hacer peticiones a APIs."
+                    },
+                    {
+                        "ask": "¿Cómo se puede prevenir la re-renderización de un componente hijo en React?",
+                        "options": [
+                            "Usando React.memo",
+                            "Usando useEffect",
+                            "Usando useState"
+                        ],
+                        "answer": "Usando React.memo",
+                        "images": "https://example.com/react-memo.png",
+                        "information": "React.memo se usa para prevenir la re-renderización de componentes funcionales si sus props no cambian."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para manejar el estado global en una aplicación React?",
+                        "options": [
+                            "useReducer",
+                            "useState",
+                            "useEffect"
+                        ],
+                        "answer": "useReducer",
+                        "images": "https://example.com/useReducer.png",
+                        "information": "useReducer se usa para manejar el estado global y lógica compleja de estado en aplicaciones React."
+                    },
+                    {
+                        "ask": "¿Cómo se pueden hacer llamadas a una API en React?",
+                        "options": [
+                            "Usando fetch o Axios dentro de useEffect",
+                            "Usando useState",
+                            "Usando useRef"
+                        ],
+                        "answer": "Usando fetch o Axios dentro de useEffect",
+                        "images": "https://example.com/api-calls.png",
+                        "information": "Las llamadas a APIs en React se hacen típicamente usando fetch o Axios dentro de useEffect."
+                    },
+                    {
+                        "ask": "¿Qué es un 'key' en una lista de elementos en React?",
+                        "options": [
+                            "Un identificador único para cada elemento",
+                            "Una referencia",
+                            "Una propiedad de estilo"
+                        ],
+                        "answer": "Un identificador único para cada elemento",
+                        "images": "https://example.com/key.png",
+                        "information": "Un key es un identificador único que se usa para ayudar a React a identificar qué elementos han cambiado."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para manejar el estado local en componentes funcionales?",
+                        "options": [
+                            "useState",
+                            "useEffect",
+                            "useContext"
+                        ],
+                        "answer": "useState",
+                        "images": "https://example.com/useState.png",
+                        "information": "useState es un hook que se usa para manejar el estado local en componentes funcionales."
+                    },
+                    {
+                        "ask": "¿Cómo se puede definir un componente de clase en React?",
+                        "options": [
+                            "class MyComponent extends React.Component {}",
+                            "function MyComponent() {}",
+                            "const MyComponent = () => {}"
+                        ],
+                        "answer": "class MyComponent extends React.Component {}",
+                        "images": "https://example.com/class-component.png",
+                        "information": "Un componente de clase se define usando la sintaxis class en JavaScript y extendiendo React.Component."
+                    },
+                    {
+                        "ask": "¿Qué es un HOC (Higher-Order Component) en React?",
+                        "options": [
+                            "Un patrón que permite reutilizar lógica entre componentes",
+                            "Un tipo de componente de clase",
+                            "Una herramienta de renderizado"
+                        ],
+                        "answer": "Un patrón que permite reutilizar lógica entre componentes",
+                        "images": "https://example.com/hoc-middel.png",
+                        "information": "Un HOC en React es un patrón que permite reutilizar lógica entre componentes, envolviendo componentes en otros componentes para agregar funcionalidad."
+                    },
+                    {
+                        "ask": "¿Qué son los Fragmentos en React?",
+                        "options": [
+                            "Una forma de agrupar múltiples elementos hijos sin agregar nodos adicionales al DOM",
+                            "Una herramienta de renderizado en servidores",
+                            "Un tipo de componente funcional"
+                        ],
+                        "answer": "Una forma de agrupar múltiples elementos hijos sin agregar nodos adicionales al DOM",
+                        "images": "https://example.com/fragment-middel.png",
+                        "information": "Los Fragmentos en React son una característica que permite agrupar múltiples elementos hijos sin agregar nodos adicionales al DOM, útiles cuando se necesita devolver múltiples elementos."
+                    },
+                    {
+                        "ask": "¿Qué son las keys en las listas de elementos en React?",
+                        "options": [
+                            "Atributos especiales que se deben incluir al crear listas de elementos",
+                            "Métodos para calcular valores",
+                            "Propiedades de los componentes"
+                        ],
+                        "answer": "Atributos especiales que se deben incluir al crear listas de elementos",
+                        "images": "https://example.com/keys-middel.png",
+                        "information": "Las keys en React son atributos especiales que se deben incluir al crear listas de elementos, ayudando a React a identificar qué elementos han cambiado, se añadieron o se eliminaron."
+                    },
+                    {
+                        "ask": "¿Qué son los Portales en React?",
+                        "options": [
+                            "Una forma de renderizar un elemento en un nodo DOM que existe fuera de la jerarquía principal del DOM de React",
+                            "Métodos de comunicación entre componentes",
+                            "Componentes especiales para estilos avanzados"
+                        ],
+                        "answer": "Una forma de renderizar un elemento en un nodo DOM que existe fuera de la jerarquía principal del DOM de React",
+                        "images": "https://example.com/portals-middel.png",
+                        "information": "Los Portales en React son una característica que permite renderizar un elemento en un nodo DOM que existe fuera de la jerarquía principal del DOM de React, útiles para modales, pop-ups y otros casos."
+                    },
+                    {
+                        "ask": "¿Qué son las refs en React?",
+                        "options": [
+                            "Referencias a nodos del DOM o a componentes creados en el árbol de React",
+                            "Métodos para cálculos matemáticos",
+                            "Un tipo de estado"
+                        ],
+                        "answer": "Referencias a nodos del DOM o a componentes creados en el árbol de React",
+                        "images": "https://example.com/refs-middel.png",
+                        "information": "Las refs en React son referencias a nodos del DOM o a componentes creados en el árbol de React, permitiendo acceder directamente a estos elementos y modificar su comportamiento."
+                    },
+                    {
+                        "ask": "¿Qué son los Prop-Types en React?",
+                        "options": [
+                            "Una característica para validar props en componentes de React",
+                            "Un tipo de estado interno",
+                            "Componentes especiales para renderizado"
+                        ],
+                        "answer": "Una característica para validar props en componentes de React",
+                        "images": "https://example.com/prop-types-middel.png",
+                        "information": "Los Prop-Types en React son una característica que permite validar las props recibidas por componentes de React, asegurando que los datos proporcionados sean del tipo esperado y evitando errores."
+                    },
+                    {
+                        "ask": "¿Cómo se define un componente de presentación en React?",
+                        "options": [
+                            "Función que devuelve JSX sin lógica de estado",
+                            "Clase que extiende Component",
+                            "Método de renderización"
+                        ],
+                        "answer": "Función que devuelve JSX sin lógica de estado",
+                        "images": "https://example.com/presentation-component-middel.png",
+                        "information": "Un componente de presentación en React se define como una función que devuelve JSX sin lógica de estado, enfocado en la presentación de datos y sin manejo de estado interno."
+                    },
+                    {
+                        "ask": "¿Qué es la desestructuración de props en React?",
+                        "options": [
+                            "Método para extraer valores específicos de props",
+                            "Un tipo de componente funcional",
+                            "Propiedades de los métodos de ciclo de vida"
+                        ],
+                        "answer": "Método para extraer valores específicos de props",
+                        "images": "https://example.com/destructuring-props-middel.png",
+                        "information": "La desestructuración de props en React es un método para extraer valores específicos de las props pasadas a un componente, facilitando el acceso a datos específicos sin tener que referirse a props directamente."
+                    },
+                    {
+                        "ask": "¿Qué es el Context API en React?",
+                        "options": [
+                            "Una API para compartir datos entre componentes sin necesidad de pasar props manualmente a través de cada nivel",
+                            "Un método para definir rutas en una aplicación",
+                            "Una herramienta para estilizar componentes"
+                        ],
+                        "answer": "Una API para compartir datos entre componentes sin necesidad de pasar props manualmente a través de cada nivel",
+                        "images": "https://example.com/context-api-middel.png",
+                        "information": "El Context API en React es una API que permite compartir datos entre componentes sin necesidad de pasar props manualmente a través de cada nivel del árbol de componentes, útil para datos globales y temas."
+                    },
+                    {
+                        "ask": "¿Cómo se manejan los eventos en React?",
+                        "options": [
+                            "Con funciones manejadoras (event handlers)",
+                            "Con métodos de ciclo de vida",
+                            "Con propiedades de componentes"
+                        ],
+                        "answer": "Con funciones manejadoras (event handlers)",
+                        "images": "https://example.com/event-handlers-middel.png",
+                        "information": "Los eventos en React se manejan utilizando funciones manejadoras (event handlers), que son funciones que se llaman cuando ocurre un evento como clics, cambios de estado, o envíos de formularios."
+                    },
+                    {
+                        "ask": "¿Qué son los hooks personalizados en React?",
+                        "options": [
+                            "Funciones que encapsulan lógica de React para reutilización en múltiples componentes",
+                            "Componentes especiales de React",
+                            "Métodos de renderizado"
+                        ],
+                        "answer": "Funciones que encapsulan lógica de React para reutilización en múltiples componentes",
+                        "images": "https://example.com/custom-hooks-expert.png",
+                        "information": "Los hooks personalizados en React son funciones que encapsulan lógica de React para reutilización en múltiples componentes, permitiendo extraer lógica de estado y efectos a funciones reutilizables."
+                    },
+                    {
+                        "ask": "¿Cómo se maneja la optimización de rendimiento en React?",
+                        "options": [
+                            "Con useMemo y useCallback para memoizar y optimizar funciones y resultados",
+                            "Con Redux para administrar el estado global",
+                            "Con métodos de ciclo de vida especiales"
+                        ],
+                        "answer": "Con useMemo y useCallback para memoizar y optimizar funciones y resultados",
+                        "images": "https://example.com/performance-optimization-expert.png",
+                        "information": "La optimización de rendimiento en React se maneja utilizando useMemo y useCallback para memoizar y optimizar funciones y resultados, reduciendo cálculos innecesarios y mejorando la velocidad de renderizado."
+                    },
+                    {
+                        "ask": "¿Qué es la renderización condicional en React?",
+                        "options": [
+                            "Renderizar componentes basados en condiciones lógicas",
+                            "Método para optimizar la renderización",
+                            "Propiedad de CSS para estilizar componentes"
+                        ],
+                        "answer": "Renderizar componentes basados en condiciones lógicas",
+                        "images": "https://example.com/conditional-rendering-expert.png",
+                        "information": "La renderización condicional en React es el proceso de renderizar componentes basados en condiciones lógicas, como valores de estado, resultados de funciones o propiedades."
+                    },
+                    {
+                        "ask": "¿Cómo se manejan las rutas protegidas en una aplicación React?",
+                        "options": [
+                            "Usando React Router para definir rutas protegidas con autenticación",
+                            "Con métodos de ciclo de vida de componentes",
+                            "Con props especiales"
+                        ],
+                        "answer": "Usando React Router para definir rutas protegidas con autenticación",
+                        "images": "https://example.com/protected-routes-expert.png",
+                        "information": "Las rutas protegidas en una aplicación React se manejan usando React Router para definir rutas que requieren autenticación, redirigiendo a usuarios no autenticados a páginas de inicio de sesión u otras páginas protegidas."
+                    },
+                    {
+                        "ask": "¿Qué son los componentes de orden superior (HOC) en React?",
+                        "options": [
+                            "Componentes que aceptan un componente y retornan un componente nuevo con funcionalidades adicionales",
+                            "Un método para renderizar componentes en un orden específico",
+                            "Componentes de React con lógica especial"
+                        ],
+                        "answer": "Componentes que aceptan un componente y retornan un componente nuevo con funcionalidades adicionales",
+                        "images": "https://example.com/hoc-expert.png",
+                        "information": "Los componentes de orden superior (HOC) en React son componentes que aceptan un componente y retornan un componente nuevo con funcionalidades adicionales, útiles para agregar lógica compartida entre múltiples componentes."
+                    },
+                    {
+                        "ask": "¿Cómo se manejan los errores en React?",
+                        "options": [
+                            "Usando try-catch en métodos de ciclo de vida",
+                            "Con componentDidCatch para capturar errores en componentes",
+                            "Con props especiales"
+                        ],
+                        "answer": "Con componentDidCatch para capturar errores en componentes",
+                        "images": "https://example.com/error-handling-expert.png",
+                        "information": "Los errores en React se manejan utilizando componentDidCatch para capturar errores en componentes y mostrar interfaces de usuario alternativas o mensajes de error, mejorando la experiencia del usuario."
+                    },
+                    {
+                        "ask": "¿Qué son los métodos de ciclo de vida en componentes de clase en React?",
+                        "options": [
+                            "Métodos especiales que se ejecutan en diferentes etapas del ciclo de vida del componente",
+                            "Métodos para renderizar componentes",
+                            "Funciones de actualización de estado"
+                        ],
+                        "answer": "Métodos especiales que se ejecutan en diferentes etapas del ciclo de vida del componente",
+                        "images": "https://example.com/lifecycle-methods-expert.png",
+                        "information": "Los métodos de ciclo de vida en componentes de clase en React son métodos especiales que se ejecutan en diferentes etapas del ciclo de vida del componente, como montaje, actualización y desmontaje."
+                    },
+                    {
+                        "ask": "¿Qué es el testing en React y cuáles son sus beneficios?",
+                        "options": [
+                            "Proceso de verificar que un componente o aplicación React funcione según lo esperado",
+                            "Método para estilizar componentes de React",
+                            "Funcionalidad para renderizar componentes en múltiples entornos"
+                        ],
+                        "answer": "Proceso de verificar que un componente o aplicación React funcione según lo esperado",
+                        "images": "https://example.com/testing-expert.png",
+                        "information": "El testing en React es el proceso de verificar que un componente o aplicación React funcione según lo esperado, asegurando que las funcionalidades respondan correctamente a las interacciones del usuario y cambios en el estado."
+                    },
+                    {
+                        "ask": "¿Cómo se manejan los estilos en React?",
+                        "options": [
+                            "Con CSS modules, styled-components, o directamente con clases y estilos en línea",
+                            "Con métodos especiales para aplicar estilos a componentes",
+                            "Usando métodos de ciclo de vida"
+                        ],
+                        "answer": "Con CSS modules, styled-components, o directamente con clases y estilos en línea",
+                        "images": "https://example.com/styling-expert.png",
+                        "information": "Los estilos en React se manejan utilizando CSS modules, styled-components, o directamente con clases y estilos en línea, permitiendo aplicar estilos específicos a componentes de manera eficiente y mantenible."
+                    },
+                    {
+                        "ask": "¿Qué es la inmutabilidad y por qué es importante en React?",
+                        "options": [
+                            "Concepto de no cambiar los datos directamente, sino crear copias para realizar cambios",
+                            "Método para reaccionar ante cambios de estado",
+                            "Función para optimizar el rendimiento"
+                        ],
+                        "answer": "Concepto de no cambiar los datos directamente, sino crear copias para realizar cambios",
+                        "images": "https://example.com/immutability-expert.png",
+                        "information": "La inmutabilidad en React es el concepto de no cambiar los datos directamente, sino crear copias para realizar cambios, asegurando la integridad de los datos y mejorando el rendimiento de la aplicación al minimizar los efectos secundarios."
+                    },
+                    {
+                        "ask": "¿Qué diferencia hay entre los patrones de diseño MVC y MVVM en React?",
+                        "options": [
+                            "MVVM separa mejor la lógica de presentación y el modelo de datos",
+                            "MVC es más adecuado para aplicaciones simples",
+                            "No hay diferencia, son términos intercambiables"
+                        ],
+                        "answer": "MVVM separa mejor la lógica de presentación y el modelo de datos",
+                        "images": "https://example.com/mvvm-pattern-middel.png",
+                        "information": "MVVM (Modelo-Vista-Modelo de Vista) en React separa mejor la lógica de presentación (Vista) y el modelo de datos (Modelo), facilitando la interacción entre la vista y el modelo con la ayuda de un componente intermedio (Modelo de Vista)."
+                    },
+                    {
+                        "ask": "¿Cómo se implementa el patrón de diseño Factory en la creación de componentes en React?",
+                        "options": [
+                            "Usando una función que crea y devuelve componentes basados en condiciones específicas",
+                            "Con métodos de ciclo de vida especiales",
+                            "Aplicando estilos condicionales a componentes"
+                        ],
+                        "answer": "Usando una función que crea y devuelve componentes basados en condiciones específicas",
+                        "images": "https://example.com/factory-pattern-middel.png",
+                        "information": "El patrón Factory en React se implementa usando una función que crea y devuelve componentes basados en condiciones específicas, permitiendo la creación dinámica de componentes según requerimientos o estados."
+                    },
+                    {
+                        "ask": "¿Por qué es útil el patrón de diseño Singleton en la gestión de instancias de servicios en aplicaciones React?",
+                        "options": [
+                            "Garantiza que solo haya una instancia de un servicio durante todo el ciclo de vida de la aplicación",
+                            "Optimiza el rendimiento de los componentes",
+                            "Facilita la creación de múltiples instancias de componentes"
+                        ],
+                        "answer": "Garantiza que solo haya una instancia de un servicio durante todo el ciclo de vida de la aplicación",
+                        "images": "https://example.com/singleton-pattern-middel.png",
+                        "information": "El patrón Singleton en React es útil porque garantiza que solo haya una instancia de un servicio durante todo el ciclo de vida de la aplicación, asegurando la coherencia y eficiencia en la gestión de datos y recursos."
+                    },
+                    {
+                        "ask": "¿Cómo se aplica el patrón de diseño Decorator para añadir funcionalidades adicionales a componentes existentes en React?",
+                        "options": [
+                            "Creando componentes envolventes que añaden funcionalidades sin modificar el componente original",
+                            "Aplicando estilos condicionales a componentes",
+                            "Usando métodos de ciclo de vida especiales"
+                        ],
+                        "answer": "Creando componentes envolventes que añaden funcionalidades sin modificar el componente original",
+                        "images": "https://example.com/decorator-pattern-middel.png",
+                        "information": "El patrón Decorator en React se aplica creando componentes envolventes que añaden funcionalidades adicionales sin modificar el componente original, mejorando la reutilización y extensibilidad del código."
+                    },
+                    {
+                        "ask": "¿Cuál es la principal ventaja del patrón de diseño Observer en la gestión de eventos en React?",
+                        "options": [
+                            "Permite la suscripción y notificación de múltiples componentes a cambios en otros componentes",
+                            "Facilita la aplicación de estilos condicionales a componentes",
+                            "Optimiza la carga inicial de la aplicación"
+                        ],
+                        "answer": "Permite la suscripción y notificación de múltiples componentes a cambios en otros componentes",
+                        "images": "https://example.com/observer-pattern-middel.png",
+                        "information": "El patrón Observer en React permite la suscripción y notificación de múltiples componentes a cambios en otros componentes, mejorando la comunicación y sincronización entre partes de la interfaz de usuario."
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": "¿Cómo se puede prevenir la re-renderización innecesaria de componentes?",
+                        "options": [
+                            "Usando React.memo",
+                            "Usando useEffect",
+                            "Usando useState"
+                        ],
+                        "answer": "Usando React.memo",
+                        "images": "https://example.com/react-memo.png",
+                        "information": "React.memo se usa para prevenir re-renderizaciones innecesarias de componentes funcionales."
+                    },
+                    {
+                        "ask": "¿Qué hook se usa para manejar efectos secundarios que requieren cleanup?",
+                        "options": [
+                            "useEffect",
+                            "useState",
+                            "useRef"
+                        ],
+                        "answer": "useEffect",
+                        "images": "https://example.com/useEffect-cleanup.png",
+                        "information": "useEffect puede retornar una función de cleanup para manejar efectos secundarios que requieren limpieza."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar el estado en componentes anidados?",
+                        "options": [
+                            "Usando Redux",
+                            "Usando props",
+                            "Usando useContext"
+                        ],
+                        "answer": "Usando useContext",
+                        "images": "https://example.com/useContext.png",
+                        "information": "useContext permite manejar el estado global y compartir datos entre componentes anidados."
+                    },
+                    {
+                        "ask": "¿Qué es la reconciliación en React?",
+                        "options": [
+                            "El proceso de actualizar el DOM",
+                            "El proceso de montar componentes",
+                            "El proceso de desmontar componentes"
+                        ],
+                        "answer": "El proceso de actualizar el DOM",
+                        "images": "https://example.com/reconciliation.png",
+                        "information": "La reconciliación es el proceso mediante el cual React actualiza el DOM para que coincida con el árbol virtual."
+                    },
+                    {
+                        "ask": "¿Cómo se puede mejorar el rendimiento de una aplicación React?",
+                        "options": [
+                            "Usando lazy loading",
+                            "Usando useState",
+                            "Usando useEffect"
+                        ],
+                        "answer": "Usando lazy loading",
+                        "images": "https://example.com/lazy-loading.png",
+                        "information": "Lazy loading permite cargar componentes de manera diferida, mejorando el rendimiento de la aplicación."
+                    },
+                    {
+                        "ask": "¿Qué es un portal en React?",
+                        "options": [
+                            "Una técnica para renderizar componentes fuera del DOM principal",
+                            "Una API de navegación",
+                            "Una técnica para manejar el estado"
+                        ],
+                        "answer": "Una técnica para renderizar componentes fuera del DOM principal",
+                        "images": "https://example.com/portals.png",
+                        "information": "Los portales permiten renderizar componentes hijos en un nodo del DOM fuera del DOM principal."
+                    },
+                    {
+                        "ask": "¿Qué es el código divido (code splitting) en React?",
+                        "options": [
+                            "Una técnica para dividir el código en partes más pequeñas",
+                            "Una técnica para manejar el estado",
+                            "Una técnica para mejorar la seguridad"
+                        ],
+                        "answer": "Una técnica para dividir el código en partes más pequeñas",
+                        "images": "https://example.com/code-splitting.png",
+                        "information": "El code splitting permite dividir el código en partes más pequeñas que se cargan bajo demanda."
+                    },
+                    {
+                        "ask": "¿Qué es el 'Suspense' en React?",
+                        "options": [
+                            "Una forma de mostrar una UI de espera mientras se carga algo",
+                            "Un hook",
+                            "Una función de renderizado"
+                        ],
+                        "answer": "Una forma de mostrar una UI de espera mientras se carga algo",
+                        "images": "https://example.com/suspense.png",
+                        "information": "Suspense es una funcionalidad de React para mostrar una interfaz de espera mientras se cargan datos u otros recursos."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar errores en componentes React?",
+                        "options": [
+                            "Usando error boundaries",
+                            "Usando try/catch",
+                            "Usando hooks"
+                        ],
+                        "answer": "Usando error boundaries",
+                        "images": "https://example.com/error-boundaries.png",
+                        "information": "Los error boundaries son componentes que capturan errores en sus hijos y permiten mostrar una interfaz de error."
+                    },
+                    {
+                        "ask": "¿Qué es un context provider en React?",
+                        "options": [
+                            "Un componente que proporciona datos a los componentes hijos",
+                            "Un hook",
+                            "Una API para manejar eventos"
+                        ],
+                        "answer": "Un componente que proporciona datos a los componentes hijos",
+                        "images": "https://example.com/context-provider.png",
+                        "information": "Un context provider es un componente que utiliza el Context API para proporcionar datos a sus componentes hijos."
+                    },
+                    {
+                        "ask": "¿Qué son los portales en React?",
+                        "options": [
+                            "Una forma de renderizar hijos en un nodo DOM fuera del árbol padre",
+                            "Una técnica de optimización de renderizado",
+                            "Una API para manejar múltiples versiones de React"
+                        ],
+                        "answer": "Una forma de renderizar hijos en un nodo DOM fuera del árbol padre",
+                        "images": "https://example.com/portals.png",
+                        "information": "Los portales en React permiten renderizar hijos en un nodo DOM fuera del árbol padre del componente."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar la internacionalización en una aplicación React?",
+                        "options": [
+                            "Usando bibliotecas como react-intl o i18next",
+                            "Usando useEffect y useState",
+                            "Usando useRef y useMemo"
+                        ],
+                        "answer": "Usando bibliotecas como react-intl o i18next",
+                        "images": "https://example.com/internationalization.png",
+                        "information": "La internacionalización en React se maneja típicamente usando bibliotecas especializadas como react-intl o i18next."
+                    },
+                    {
+                        "ask": "¿Qué es la renderización condicional en React?",
+                        "options": [
+                            "Renderizar componentes basados en condiciones",
+                            "Renderizar solo una vez",
+                            "No renderizar componentes"
+                        ],
+                        "answer": "Renderizar componentes basados en condiciones",
+                        "images": "https://example.com/conditional-rendering.png",
+                        "information": "La renderización condicional en React es el proceso de renderizar componentes basados en condiciones lógicas."
+                    },
+                    {
+                        "ask": "¿Cómo se puede optimizar el rendimiento de una lista larga en React?",
+                        "options": [
+                            "Usando la clave única (key) para cada elemento",
+                            "Usando solo componentes funcionales",
+                            "Usando React.memo"
+                        ],
+                        "answer": "Usando la clave única (key) para cada elemento",
+                        "images": "https://example.com/key-optimization.png",
+                        "information": "La optimización del rendimiento de una lista larga en React se logra usando keys únicas para cada elemento para ayudar a React a identificar cambios eficientemente."
+                    },
+                    {
+                        "ask": "¿Qué son los componentes de orden superior (HOC) en React?",
+                        "options": [
+                            "Componentes que toman otros componentes como argumentos y devuelven un nuevo componente",
+                            "Componentes para el manejo de estado",
+                            "Componentes de acceso"
+                        ],
+                        "answer": "Componentes que toman otros componentes como argumentos y devuelven un nuevo componente",
+                        "images": "https://example.com/hoc.png",
+                        "information": "Los componentes de orden superior (HOC) en React son funciones que toman componentes como argumentos y devuelven un nuevo componente."
+                    },
+                    {
+                        "ask": "¿Qué es el 'context' en React?",
+                        "options": [
+                            "Un mecanismo para pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel",
+                            "Un método del ciclo de vida",
+                            "Una técnica para animaciones"
+                        ],
+                        "answer": "Un mecanismo para pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel",
+                        "images": "https://example.com/context.png",
+                        "information": "El contexto (context) en React es un mecanismo que permite pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel."
+                    },
+                    {
+                        "ask": "¿Cómo se puede hacer testing de componentes en React?",
+                        "options": [
+                            "Usando herramientas como Jest y React Testing Library",
+                            "Usando solo console.log()",
+                            "Usando solo Cypress"
+                        ],
+                        "answer": "Usando herramientas como Jest y React Testing Library",
+                        "images": "https://example.com/testing-react.png",
+                        "information": "El testing de componentes en React se realiza típicamente usando herramientas de testing como Jest y React Testing Library."
+                    },
+                    {
+                        "ask": "¿Qué es un 'hook' personalizado en React?",
+                        "options": [
+                            "Una función que usa otros hooks",
+                            "Una función para manejar eventos",
+                            "Un método del ciclo de vida"
+                        ],
+                        "answer": "Una función que usa otros hooks",
+                        "images": "https://example.com/custom-hook.png",
+                        "information": "Un hook personalizado en React es una función que usa uno o más hooks React dentro de ella para encapsular lógica reusable."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar la autenticación en una aplicación React?",
+                        "options": [
+                            "Usando bibliotecas como Auth0 o Firebase Auth",
+                            "Usando solo cookies",
+                            "Usando localStorage"
+                        ],
+                        "answer": "Usando bibliotecas como Auth0 o Firebase Auth",
+                        "images": "https://example.com/authentication.png",
+                        "information": "La autenticación en una aplicación React se maneja típicamente usando bibliotecas especializadas como Auth0 o Firebase Auth."
+                    },
+                    {
+                        "ask": "¿Qué es la 'virtual DOM' en React?",
+                        "options": [
+                            "Una representación ligera del DOM en memoria",
+                            "Una técnica de renderizado",
+                            "Una herramienta para debugging"
+                        ],
+                        "answer": "Una representación ligera del DOM en memoria",
+                        "images": "https://example.com/virtual-dom.png",
+                        "information": "La virtual DOM en React es una representación ligera del DOM en memoria que React usa para mejorar el rendimiento y eficiencia en las actualizaciones del DOM."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar errores en React?",
+                        "options": [
+                            "Usando componentDidCatch",
+                            "Usando solo try-catch en funciones",
+                            "No manejar errores"
+                        ],
+                        "answer": "Usando componentDidCatch",
+                        "images": "https://example.com/error-handling.png",
+                        "information": "Los errores en React se manejan usando componentDidCatch en componentes de clase o usando un ErrorBoundary para capturar errores en componentes funcionales."
+                    },
+                    {
+                        "ask": "¿Cómo se aplica el patrón de diseño Composite en la construcción de árboles de componentes en React?",
+                        "options": [
+                            "Creando componentes que pueden contener una lista de otros componentes",
+                            "Aplicando estilos dinámicos a componentes",
+                            "Optimizando la carga inicial de la aplicación"
+                        ],
+                        "answer": "Creando componentes que pueden contener una lista de otros componentes",
+                        "images": "https://example.com/composite-pattern-expert.png",
+                        "information": "El patrón Composite en React se aplica creando componentes que pueden contener una lista de otros componentes, facilitando la construcción de árboles de componentes complejos y la manipulación de grupos de componentes de manera uniforme."
+                    },
+                    {
+                        "ask": "¿Cuál es la diferencia entre el patrón de diseño Bridge y el patrón Adapter en la integración de componentes en React?",
+                        "options": [
+                            "Bridge separa una abstracción de su implementación, mientras que Adapter adapta interfaces incompatibles",
+                            "Ambos son intercambiables",
+                            "Bridge y Adapter son lo mismo"
+                        ],
+                        "answer": "Bridge separa una abstracción de su implementación, mientras que Adapter adapta interfaces incompatibles",
+                        "images": "https://example.com/bridge-adapter-difference-expert.png",
+                        "information": "En React, el patrón Bridge separa una abstracción de su implementación, permitiendo que ambas puedan variar independientemente. En cambio, el patrón Adapter adapta interfaces incompatibles para que puedan trabajar juntas."
+                    },
+                    {
+                        "ask": "¿Cómo se implementa el patrón de diseño Facade en React para proporcionar una interfaz unificada a un conjunto de interfaces en un subsistema?",
+                        "options": [
+                            "Creando un componente que provee una interfaz simple para interactuar con subsistemas más complejos",
+                            "Aplicando estilos dinámicos a componentes",
+                            "Optimizando la velocidad de renderizado de componentes"
+                        ],
+                        "answer": "Creando un componente que provee una interfaz simple para interactuar con subsistemas más complejos",
+                        "images": "https://example.com/facade-pattern-expert.png",
+                        "information": "El patrón Facade en React se implementa creando un componente que provee una interfaz simple y unificada para interactuar con subsistemas más complejos, ocultando la complejidad interna y simplificando el uso de múltiples interfaces."
+                    },
+                    {
+                        "ask": "¿Por qué es útil el patrón de diseño Proxy en la gestión de recursos costosos en aplicaciones React?",
+                        "options": [
+                            "Controla el acceso a objetos costosos proporcionando un sustituto o placeholder",
+                            "Optimiza la carga inicial de la aplicación",
+                            "Crea componentes envolventes que añaden funcionalidades adicionales"
+                        ],
+                        "answer": "Controla el acceso a objetos costosos proporcionando un sustituto o placeholder",
+                        "images": "https://example.com/proxy-pattern-expert.png",
+                        "information": "El patrón Proxy en React es útil porque controla el acceso a objetos costosos proporcionando un sustituto o placeholder, mejorando el rendimiento y la eficiencia al cargar y manejar recursos costosos en la aplicación."
+                    },
+                    {
+                        "ask": "¿Cómo se implementa el patrón de diseño Flyweight para optimizar el rendimiento de componentes React?",
+                        "options": [
+                            "Extrayendo y reutilizando instancias comunes de componentes para reducir el uso de memoria",
+                            "Aplicando estilos dinámicos a componentes",
+                            "Usando una función que crea y devuelve componentes basados en condiciones específicas"
+                        ],
+                        "answer": "Extrayendo y reutilizando instancias comunes de componentes para reducir el uso de memoria",
+                        "images": "https://example.com/flyweight-pattern-expert.png",
+                        "information": "El patrón Flyweight en React se implementa extrayendo y reutilizando instancias comunes de componentes para reducir el uso de memoria, optimizando así el rendimiento al manejar grandes cantidades de componentes similares en la aplicación."
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": "¿Cómo se puede implementar SSR (Server-Side Rendering) con React?",
+                        "options": [
+                            "Usando Next.js",
+                            "Usando Redux",
+                            "Usando useEffect"
+                        ],
+                        "answer": "Usando Next.js",
+                        "images": "https://example.com/ssr.png",
+                        "information": "Next.js es un framework de React que permite implementar renderizado del lado del servidor (SSR)."
+                    },
+                    {
+                        "ask": "¿Qué es la renderización estática en React?",
+                        "options": [
+                            "Generar HTML en build time",
+                            "Generar HTML en runtime",
+                            "Generar HTML en el servidor"
+                        ],
+                        "answer": "Generar HTML en build time",
+                        "images": "https://example.com/static-rendering.png",
+                        "information": "La renderización estática genera HTML en el tiempo de construcción (build time), mejorando el rendimiento y SEO."
+                    },
+                    {
+                        "ask": "¿Qué es el Context API?",
+                        "options": [
+                            "Un método para manejar el estado global",
+                            "Un hook",
+                            "Una función de renderizado"
+                        ],
+                        "answer": "Un método para manejar el estado global",
+                        "images": "https://example.com/context-api.png",
+                        "information": "El Context API permite manejar el estado global y compartir datos a lo largo de la aplicación."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar datos asincrónicos en React?",
+                        "options": [
+                            "Usando useEffect y fetch/axios",
+                            "Usando useState",
+                            "Usando useContext"
+                        ],
+                        "answer": "Usando useEffect y fetch/axios",
+                        "images": "https://example.com/async-data.png",
+                        "information": "useEffect se utiliza junto con fetch o axios para manejar datos asincrónicos en React."
+                    },
+                    {
+                        "ask": "¿Qué es la hidratación (hydration) en React?",
+                        "options": [
+                            "El proceso de añadir interactividad al HTML renderizado en el servidor",
+                            "El proceso de renderizar componentes",
+                            "El proceso de manejar el estado"
+                        ],
+                        "answer": "El proceso de añadir interactividad al HTML renderizado en el servidor",
+                        "images": "https://example.com/hydration.png",
+                        "information": "La hidratación es el proceso de añadir interactividad al HTML que ha sido renderizado previamente en el servidor."
+                    },
+                    {
+                        "ask": "¿Qué es la API de contexto (Context API)?",
+                        "options": [
+                            "Un método para manejar el estado global",
+                            "Un hook",
+                            "Una función de renderizado"
+                        ],
+                        "answer": "Un método para manejar el estado global",
+                        "images": "https://example.com/context-api.png",
+                        "information": "La API de contexto permite manejar el estado global y compartir datos a lo largo de la aplicación."
+                    },
+                    {
+                        "ask": "¿Cómo se puede optimizar el rendimiento de una aplicación React grande?",
+                        "options": [
+                            "Usando React.lazy y Suspense",
+                            "Usando useEffect",
+                            "Usando useState"
+                        ],
+                        "answer": "Usando React.lazy y Suspense",
+                        "images": "https://example.com/react-lazy-suspense.png",
+                        "information": "React.lazy y Suspense permiten cargar componentes de manera diferida, mejorando el rendimiento de la aplicación."
+                    },
+                    {
+                        "ask": "¿Qué es un hook personalizado en React?",
+                        "options": [
+                            "Una función que encapsula lógica reutilizable",
+                            "Un método del ciclo de vida",
+                            "Una técnica para manejar el estado"
+                        ],
+                        "answer": "Una función que encapsula lógica reutilizable",
+                        "images": "https://example.com/custom-hook.png",
+                        "information": "Un hook personalizado es una función que encapsula lógica reutilizable en componentes funcionales."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar la carga de grandes listas de datos en React?",
+                        "options": [
+                            "Usando virtualización de listas",
+                            "Usando useState",
+                            "Usando useEffect"
+                        ],
+                        "answer": "Usando virtualización de listas",
+                        "images": "https://example.com/virtualization.png",
+                        "information": "La virtualización de listas permite renderizar solo los elementos visibles en la pantalla, mejorando el rendimiento."
+                    },
+                    {
+                        "ask": "¿Qué es el 'Strict Mode' en React?",
+                        "options": [
+                            "Una herramienta para identificar problemas potenciales en la aplicación",
+                            "Un hook",
+                            "Una técnica para mejorar la seguridad"
+                        ],
+                        "answer": "Una herramienta para identificar problemas potenciales en la aplicación",
+                        "images": "https://example.com/strict-mode.png",
+                        "information": "El 'Strict Mode' es una herramienta de desarrollo que ayuda a identificar problemas potenciales en una aplicación React."
+                    },
+                    {
+                        "ask": "¿Qué es 'server-side rendering' en React?",
+                        "options": [
+                            "Renderización del lado del servidor para generar HTML inicial en lugar de en el cliente",
+                            "Renderización del lado del cliente",
+                            "Un método de optimización"
+                        ],
+                        "answer": "Renderización del lado del servidor para generar HTML inicial en lugar de en el cliente",
+                        "images": "https://example.com/server-side-rendering.png",
+                        "information": "Server-side rendering en React es el proceso de renderizar HTML inicial en el servidor antes de enviarlo al cliente, mejorando el tiempo de carga inicial y SEO."
+                    },
+                    {
+                        "ask": "¿Cómo se puede implementar un 'service worker' en una aplicación React?",
+                        "options": [
+                            "Usando el API de service workers de JavaScript",
+                            "Usando solo React",
+                            "Usando localStorage"
+                        ],
+                        "answer": "Usando el API de service workers de JavaScript",
+                        "images": "https://example.com/service-worker.png",
+                        "information": "Un service worker en una aplicación React se implementa usando el API de service workers de JavaScript para manejar operaciones offline, caching y notificaciones push."
+                    },
+                    {
+                        "ask": "¿Qué es la 'lazy loading' en React?",
+                        "options": [
+                            "Una técnica para cargar componentes solo cuando se necesitan",
+                            "Una técnica de renderizado",
+                            "Una herramienta de debugging"
+                        ],
+                        "answer": "Una técnica para cargar componentes solo cuando se necesitan",
+                        "images": "https://example.com/lazy-loading.png",
+                        "information": "Lazy loading en React es una técnica donde los componentes se cargan solo cuando son necesarios, mejorando el rendimiento inicial de la aplicación."
+                    },
+                    {
+                        "ask": "¿Cómo se puede implementar 'code splitting' en una aplicación React?",
+                        "options": [
+                            "Dividiendo el código en partes más pequeñas que se cargan bajo demanda",
+                            "Usando solo un archivo JavaScript grande",
+                            "Usando localStorage"
+                        ],
+                        "answer": "Dividiendo el código en partes más pequeñas que se cargan bajo demanda",
+                        "images": "https://example.com/code-splitting.png",
+                        "information": "Code splitting en React es una técnica donde se divide el código en partes más pequeñas que se cargan bajo demanda, mejorando el rendimiento y la velocidad de carga de la aplicación."
+                    },
+                    {
+                        "ask": "¿Cómo se puede asegurar una aplicación React?",
+                        "options": [
+                            "Usando HTTPS",
+                            "Usando solo HTTP",
+                            "No asegurando la aplicación"
+                        ],
+                        "answer": "Usando HTTPS",
+                        "images": "https://example.com/https.png",
+                        "information": "La seguridad en una aplicación React se asegura usando HTTPS para proteger las comunicaciones entre el cliente y el servidor."
+                    },
+                    {
+                        "ask": "¿Qué son los 'refs' en React y cuándo se utilizan?",
+                        "options": [
+                            "Referencias a elementos del DOM usadas para acceder a nodos de forma imperativa",
+                            "Objetos para almacenar estado",
+                            "Variables para iteraciones"
+                        ],
+                        "answer": "Referencias a elementos del DOM usadas para acceder a nodos de forma imperativa",
+                        "images": "https://example.com/refs.png",
+                        "information": "Los 'refs' en React son referencias a elementos del DOM utilizadas para acceder a nodos de forma imperativa."
+                    },
+                    {
+                        "ask": "¿Cómo se maneja el enrutamiento protegido en una aplicación React?",
+                        "options": [
+                            "Usando un componente de alta orden (HOC) para verificar la autenticación",
+                            "Usando solo props",
+                            "Usando localStorage"
+                        ],
+                        "answer": "Usando un componente de alta orden (HOC) para verificar la autenticación",
+                        "images": "https://example.com/protected-routing.png",
+                        "information": "El enrutamiento protegido en una aplicación React se maneja usando un componente de alto orden (HOC) para verificar la autenticación antes de renderizar componentes protegidos."
+                    },
+                    {
+                        "ask": "¿Cómo se puede implementar la integración de GraphQL en una aplicación React?",
+                        "options": [
+                            "Usando Apollo Client",
+                            "Usando solo REST API",
+                            "Usando localStorage"
+                        ],
+                        "answer": "Usando Apollo Client",
+                        "images": "https://example.com/graphql-integration.png",
+                        "information": "La integración de GraphQL en una aplicación React se implementa típicamente usando Apollo Client para manejar las consultas y actualizaciones de datos de manera eficiente."
+                    },
+                    {
+                        "ask": "¿Qué son los 'portales' en React y cuándo se utilizan?",
+                        "options": [
+                            "Una forma de renderizar hijos en un nodo DOM fuera del árbol padre",
+                            "Objetos para almacenar datos",
+                            "Variables para iteraciones"
+                        ],
+                        "answer": "Una forma de renderizar hijos en un nodo DOM fuera del árbol padre",
+                        "images": "https://example.com/portals-advanced.png",
+                        "information": "Los 'portales' en React permiten renderizar hijos en un nodo DOM fuera del árbol padre del componente, útil para casos como modales o elementos flotantes."
+                    },
+                    {
+                        "ask": "¿Cómo se puede implementar la animación en una aplicación React?",
+                        "options": [
+                            "Usando bibliotecas como React Spring o Framer Motion",
+                            "Usando solo CSS",
+                            "Usando localStorage"
+                        ],
+                        "answer": "Usando bibliotecas como React Spring o Framer Motion",
+                        "images": "https://example.com/react-animation.png",
+                        "information": "La animación en una aplicación React se implementa usando bibliotecas especializadas como React Spring o Framer Motion para crear transiciones y efectos visuales dinámicos."
+                    },
+                    {
+                        "ask": "¿Qué son los 'hooks' personalizados en React?",
+                        "options": [
+                            "Funciones que usan otros hooks para encapsular lógica reusable",
+                            "Métodos para manejar eventos",
+                            "Objetos para almacenar estado"
+                        ],
+                        "answer": "Funciones que usan otros hooks para encapsular lógica reusable",
+                        "images": "https://example.com/custom-hooks-advanced.png",
+                        "information": "Los 'hooks' personalizados en React son funciones que utilizan uno o más hooks React dentro de ellas para encapsular lógica reusable y modularizar el código."
+                    },
+                    {
+                        "ask": "¿Cómo se puede manejar el estado global en una aplicación React sin Redux?",
+                        "options": [
+                            "Usando Context API",
+                            "Usando solo props",
+                            "Usando localStorage"
+                        ],
+                        "answer": "Usando Context API",
+                        "images": "https://example.com/context-api.png",
+                        "information": "El estado global en una aplicación React sin Redux se maneja típicamente usando Context API para compartir datos entre componentes sin necesidad de pasar props manualmente a través de cada nivel."
+                    },
+                    {
+                        "ask": "¿Qué son los 'hooks' de renderizado en React?",
+                        "options": [
+                            "Hooks como useMemo y useCallback para optimizar el rendimiento",
+                            "Métodos para renderizar componentes",
+                            "Objetos para almacenar datos"
+                        ],
+                        "answer": "Hooks como useMemo y useCallback para optimizar el rendimiento",
+                        "images": "https://example.com/rendering-hooks.png",
+                        "information": "Los 'hooks' de renderizado en React como useMemo y useCallback se utilizan para optimizar el rendimiento al memoizar valores y funciones callback para evitar cálculos innecesarios y renderizaciones."
+                    },
+                    {
+                        "ask": "¿Qué es el 'server-side rendering' (SSR) en React y cuáles son sus beneficios?",
+                        "options": [
+                            "Renderización del lado del servidor para mejorar el SEO y el tiempo de carga inicial",
+                            "Renderización del lado del cliente",
+                            "Un método para debugging"
+                        ],
+                        "answer": "Renderización del lado del servidor para mejorar el SEO y el tiempo de carga inicial",
+                        "images": "https://example.com/ssr.png",
+                        "information": "El 'server-side rendering' (SSR) en React es el proceso de renderizar HTML inicial en el servidor antes de enviarlo al cliente, lo cual mejora el SEO y el tiempo de carga inicial de la aplicación."
+                    },
+                    {
+                        "ask": "¿Cómo se puede mejorar la seguridad en una aplicación React?",
+                        "options": [
+                            "Usando prácticas de seguridad como sanitización de datos y autenticación segura",
+                            "Usando solo localStorage",
+                            "Usando HTTP en lugar de HTTPS"
+                        ],
+                        "answer": "Usando prácticas de seguridad como sanitización de datos y autenticación segura",
+                        "images": "https://example.com/react-security.png",
+                        "information": "La seguridad en una aplicación React se mejora implementando prácticas como la sanitización de datos, la autenticación segura y el uso de HTTPS para proteger las comunicaciones."
+                    },
+                    {
+                        "ask": "¿Cómo se aplica el patrón de diseño Observer para gestionar las actualizaciones entre componentes en React?",
+                        "options": ["Utilizando un componente observable y suscriptores que reaccionan a los cambios", "Aplicando estilos dinámicos a componentes", "Optimizando la velocidad de renderizado de componentes"],
+                        "answer": "Utilizando un componente observable y suscriptores que reaccionan a los cambios",
+                        "images": "https://example.com/observer-pattern-god.png",
+                        "information": "El patrón Observer en React se aplica utilizando un componente observable que notifica a sus suscriptores sobre cambios importantes, permitiendo una gestión eficiente de las actualizaciones entre componentes."
+                    },
+                    {
+                        "ask": "¿Por qué es beneficioso implementar el patrón de diseño Decorator en la composición de componentes React?",
+                        "options": ["Para añadir responsabilidades adicionales a objetos de manera dinámica", "Optimiza la carga inicial de la aplicación", "Crea componentes envolventes que añaden funcionalidades adicionales"],
+                        "answer": "Para añadir responsabilidades adicionales a objetos de manera dinámica",
+                        "images": "https://example.com/decorator-pattern-god.png",
+                        "information": "El patrón Decorator en React es beneficioso porque permite añadir responsabilidades adicionales a objetos de manera dinámica, extendiendo así la funcionalidad de los componentes de manera flexible y sin modificar su estructura base."
+                    },
+                    {
+                        "ask": "¿Cómo se implementa el patrón de diseño Strategy para permitir que un componente React pueda cambiar su comportamiento en tiempo de ejecución?",
+                        "options": ["Definiendo una familia de algoritmos, encapsulándolos y haciendo que sean intercambiables", "Aplicando estilos dinámicos a componentes", "Usando una función que crea y devuelve componentes basados en condiciones específicas"],
+                        "answer": "Definiendo una familia de algoritmos, encapsulándolos y haciendo que sean intercambiables",
+                        "images": "https://example.com/strategy-pattern-god.png",
+                        "information": "El patrón Strategy en React se implementa definiendo una familia de algoritmos, encapsulándolos y haciendo que sean intercambiables dinámicamente, permitiendo que un componente pueda cambiar su comportamiento en tiempo de ejecución según sea necesario."
+                    },
+                    {
+                        "ask": "¿Por qué es útil aplicar el patrón de diseño Singleton en la gestión de instancias únicas de componentes React?",
+                        "options": ["Para asegurar que solo exista una instancia de un componente en toda la aplicación", "Optimizar la velocidad de renderizado de componentes", "Controlar el flujo de datos entre componentes"],
+                        "answer": "Para asegurar que solo exista una instancia de un componente en toda la aplicación",
+                        "images": "https://example.com/singleton-pattern-god.png",
+                        "information": "El patrón Singleton en React es útil porque asegura que solo exista una instancia de un componente en toda la aplicación, evitando así problemas de sincronización y garantizando el acceso controlado a dicha instancia."
+                    },
+                    {
+                        "ask": "¿Cómo se implementa el patrón de diseño Factory Method para crear componentes React basados en ciertos criterios?",
+                        "options": ["Definiendo una interfaz para crear un objeto, pero permitiendo que las subclases decidan qué clase instanciar", "Aplicando estilos dinámicos a componentes", "Optimizando la velocidad de renderizado de componentes"],
+                        "answer": "Definiendo una interfaz para crear un objeto, pero permitiendo que las subclases decidan qué clase instanciar",
+                        "images": "https://example.com/factory-method-pattern-god.png",
+                        "information": "El patrón Factory Method en React se implementa definiendo una interfaz para crear un objeto, pero permitiendo que las subclases decidan qué clase instanciar, proporcionando así una forma flexible de crear componentes basados en ciertos criterios específicos."
+                    }
+                ]
+            }
+        },
+        {
+            "node": {
+                "basic": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ]
+            }
+        },
+        {
+            "next": {
+                "basic": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ]
+            }
+        },
+        {
+            "sequelize": {
+                "basic": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ]
+            }
+        },
+        {
+            "sql": {
+                "basic": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ]
+            }
+        },
+        {
+            "html": {
+                "basic": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ]
+            }
+        },
+        {
+            "typescript": {
+                "basic": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ]
+            }
+        },
+        {
+            "graphql": {
+                "basic": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "middel": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "expert": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ],
+                "god": [
+                    {
+                        "ask": {},
+                        "options": {},
+                        "answer": {},
+                        "images": {},
+                        "information": {}
+                    }
+                ]
+            }
+        }
+    ]
+}
