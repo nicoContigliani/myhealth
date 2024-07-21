@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { View, Text, Button, Alert, StyleSheet } from 'react-native';
 import * as LocalAuthentication from 'expo-local-authentication';
+import { fingerPrintAuthSlice } from '@/redux/Auth/Auth';
 
 const FingerprintAuth = () => {
+  const dispatch = useAppDispatch();
+
   const [isBiometricSupported, setIsBiometricSupported] = useState(false);
 
   useEffect(() => {
@@ -28,7 +32,14 @@ const FingerprintAuth = () => {
       });
 
       if (biometricAuth.success) {
+        console.log("🚀 ~ handleBiometricAuth ~ biometricAuth:", biometricAuth)
         Alert.alert('Autenticado', '¡Autenticación exitosa!');
+        try {
+          dispatch(fingerPrintAuthSlice(biometricAuth.success))
+
+        } catch (error) {
+          console.log("🚀 ~ handleBiometricAuth ~ error:", error)
+        }
       } else {
         Alert.alert('Autenticación fallida', 'Por favor, inténtalo de nuevo.');
       }

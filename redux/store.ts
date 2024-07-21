@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import messageReducer from "./messages/message";
+import fingerPrintAuthReducer from './Auth/Auth'
 
 export const store = configureStore({
     reducer: {
          message: messageReducer,
+         fingerPrintAuth:fingerPrintAuthReducer
     },
 });
 
