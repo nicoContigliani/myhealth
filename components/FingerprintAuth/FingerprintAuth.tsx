@@ -1,13 +1,37 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
-import { View, Text, Button, Alert, StyleSheet } from 'react-native';
+import { View, Text, Button, Alert, StyleSheet, TouchableOpacity, Animated } from 'react-native';
 import * as LocalAuthentication from 'expo-local-authentication';
 import { fingerPrintAuthSlice } from '@/redux/Auth/Auth';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; // Importar el ícono de huella dactilar
 
 const FingerprintAuth = () => {
   const dispatch = useAppDispatch();
+  const opacity = useRef(new Animated.Value(1)).current;
 
   const [isBiometricSupported, setIsBiometricSupported] = useState(false);
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(opacity, {
+          toValue: 0,
+          duration: 1050,
+          useNativeDriver: true,
+        }),
+        Animated.timing(opacity, {
+          toValue: 1,
+          duration: 1000,
+          useNativeDriver: true,
+        }),
+      ])
+    ).start();
+  }, [opacity]);
+
+
+
+
+
+
 
   useEffect(() => {
     (async () => {
@@ -50,16 +74,31 @@ const FingerprintAuth = () => {
 
   return (
     <View style={styles.container}>
-      <Text>
+      {/* <Text>
         {isBiometricSupported
           ? 'Tu dispositivo soporta autenticación biométrica.'
           : 'Tu dispositivo no soporta autenticación biométrica.'}
-      </Text>
-      <Button
+      </Text> */}
+      {/* <Button
         title="Autenticarse con huella dactilar"
         onPress={handleBiometricAuth}
         disabled={!isBiometricSupported}
-      />
+      /> */}
+      <Animated.View style={{ opacity }}>
+        <TouchableOpacity
+          style={styles.biometricButton}
+          onPress={handleBiometricAuth}
+          disabled={!isBiometricSupported}
+        >
+          <Icon name="fingerprint" size={45} color="grey" />
+        </TouchableOpacity>
+        <Text style={styles.texts}>
+          finger print
+        </Text>
+      </Animated.View>
+
+
+
     </View>
   );
 };
@@ -67,10 +106,26 @@ const FingerprintAuth = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
-    padding: 16,
+    borderColor: 'rgba(131, 131, 131, 0.451)', // Color del borde con transparencia
   },
+  biometricButton: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    borderRadius: 38,
+    color:'grey'
+
+
+  },
+  biometricButtonText: {
+    // marginLeft: 10,
+    fontSize: 16,
+    color: '#007aff',
+  },
+  texts: {
+    fontSize: 16,
+  }
 });
 
 export default FingerprintAuth;
