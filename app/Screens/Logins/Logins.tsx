@@ -208,6 +208,7 @@ export default function Login() {
             placeholderTextColor="#888"
           />
         </View>
+        
         <View style={styles.inputWrapper}>
           <TextInput
             style={styles.input}
@@ -220,19 +221,27 @@ export default function Login() {
         </View>
         {/* <Button title="Login" onPress={handleLogin} color="#007aff" /> */}
 
+
         <TouchableOpacity
           style={styles.button}
           onPress={handleLogin}
         >
           <Text style={styles.buttonText}>Get In</Text>
         </TouchableOpacity>
-
-
+        {/* <TouchableOpacity
+          style={styles.button2}
+          onPress={handleLogin}
+        >
+          <Text style={styles.buttonText2}>Register</Text>
+        </TouchableOpacity> */}
 
       </View>
+
+
       <View style={styles.FingerprintAuth}>
         <FingerprintAuth />
       </View>
+      
     </View>
   );
 }
@@ -244,7 +253,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     backgroundColor: '#f0f0f5',
     overflow: 'hidden',
-    borderBlockColor:'brack',
+    borderBlockColor: 'brack',
     borderWidth: 1,
     borderRadius: 10,
   },
@@ -255,6 +264,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   inputContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
     width: '80%',
     paddingTop: 0,
     alignItems: 'center',
@@ -270,7 +281,7 @@ const styles = StyleSheet.create({
     // position: 'absolute',
     // left: 10,
     paddingBottom: 10,
-    
+
   },
   input: {
     flex: 1,
@@ -279,7 +290,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: '#ddd',
     borderWidth: 1,
-    paddingHorizontal: 40, // Se incrementó para dejar espacio al icono
+    paddingHorizontal: 20, // Se incrementó para dejar espacio al icono
     fontSize: 16,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -294,8 +305,19 @@ const styles = StyleSheet.create({
     alignItems: 'center', // Centra el contenido
     justifyContent: 'center', // Centra el contenido
   },
+  button2: {
+    backgroundColor: '#a0a0a01e', // Cambia el color del fondo
+    padding: 10, // Espaciado interno
+    borderRadius: 8, // Bordes redondeados
+    alignItems: 'center', // Centra el contenido
+    justifyContent: 'center', // Centra el contenido
+  },
   buttonText: {
     color: '#fff', // Color del texto
+    fontSize: 16, // Tamaño del texto
+  },
+  buttonText2: {
+    color: '#000000', // Color del texto
     fontSize: 16, // Tamaño del texto
   },
   separator: {

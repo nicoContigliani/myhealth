@@ -3,7 +3,7 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import 'react-native-reanimated';
 import { store } from '../redux//store';
 import { Text, View } from '@/components/Themed';
@@ -13,6 +13,8 @@ import { Text, View } from '@/components/Themed';
 import { useColorScheme } from '@/components/useColorScheme';
 import { Provider } from 'react-redux';
 import Login from './Screens/Logins/Logins';
+import { useAppSelector } from '@/redux/hooks';
+import { selectAuth } from '@/redux/Auth/Auth';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -48,26 +50,37 @@ export default function RootLayout() {
     return null;
   }
 
-  return <RootLayoutNav />;
+  return   <Provider store={store}><RootLayoutNav /></Provider>;
 }
 
 function RootLayoutNav() {
   const colorScheme = useColorScheme();
 
+  const getModulesServices: any | any[] = useAppSelector(selectAuth);
+  const [isLogin,setIslogin]=useState<boolean>(false)
+  useEffect(() => {  
+    console.log("🚀 ~ TabLayout ~ getModulesServices:", getModulesServices?.isLogin)
+    setIslogin(getModulesServices?.isLogin)
+  }, [getModulesServices])
+
+
+
+
+
+
   return (
-    <Provider store={store}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         {
-          false ?
+          isLogin ?
             <Stack>
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-              <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+              <Stack.Screen name="modal" options={{ presentation: 'modal' }} />   
+                         
             </Stack>
             :
             <Login />
         }
       </ThemeProvider>
-    </Provider>
 
   );
 }

@@ -56,8 +56,8 @@ const FingerprintAuth = () => {
       });
 
       if (biometricAuth.success) {
-        console.log("🚀 ~ handleBiometricAuth ~ biometricAuth:", biometricAuth)
-        Alert.alert('Autenticado', '¡Autenticación exitosa!');
+        // console.log("🚀 ~ handleBiometricAuth ~ biometricAuth:", biometricAuth)
+        // Alert.alert('Autenticado', '¡Autenticación exitosa!');
         try {
           dispatch(fingerPrintAuthSlice(biometricAuth.success))
 
