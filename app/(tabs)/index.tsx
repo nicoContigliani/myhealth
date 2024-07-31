@@ -4,11 +4,14 @@ import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 import Message from '@/components/Messages/Message';
 import FingerprintAuth from '@/components/FingerprintAuth/FingerprintAuth';
+import StepCounter from '@/components/StepCounter/StepCounter';
+import AccelerometerSensor from '@/components/StepCounter/StepCounter';
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
+      <AccelerometerSensor />
     </View>
   );
 }

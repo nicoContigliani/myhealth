@@ -4301,6 +4301,13 @@ expo-router@~3.5.18:
     react-native-helmet-async "2.0.4"
     schema-utils "^4.0.1"
 
+expo-sensors@^13.0.9:
+  version "13.0.9"
+  resolved "https://registry.npmjs.org/expo-sensors/-/expo-sensors-13.0.9.tgz"
+  integrity sha512-yi/TERUP8dpsJWWRgjT+UuQ7PI604PMndwXh9iBnfNO7q+dtoKZKsVSNJw61IKLNflbtCAyJxgmzPoe/JDT04Q==
+  dependencies:
+    invariant "^2.2.4"
+
 expo-splash-screen@~0.27.5, expo-splash-screen@0.27.5:
   version "0.27.5"
   resolved "https://registry.npmjs.org/expo-splash-screen/-/expo-splash-screen-0.27.5.tgz"
