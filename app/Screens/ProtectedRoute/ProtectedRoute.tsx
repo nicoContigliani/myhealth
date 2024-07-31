@@ -16,6 +16,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
   
 
   const navigation = useNavigation();
+  
 
   if (!isLogin) {
     return (
